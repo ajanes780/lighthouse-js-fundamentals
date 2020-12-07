@@ -5,5 +5,5 @@ iceCreamFlavours.push("root Beer")
 console.log(iceCreamFlavours);
 
 console.log(iceCreamFlavours[0]);
-console.log(iceCreamFlavours[6]);
+console.log(iceCreamFlavours[6])
 console.log(iceCreamFlavours.length);
