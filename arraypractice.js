@@ -1,14 +1,13 @@
-var test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4, 19, 300, 3775, 299, 36, 209, 148, 169, 299, 6, 109, 20, 58, 139, 59, 3, 1, 139];
-
-test.forEach(function(item, index){
-  if(item%3===0){
-      // The commented statements below would not be able to change the value of item
-      // because the `item` is a COPY of actual element, while actual is test[index]
-      // item = item + 100;
-      // console.log("The updated element is "+item+" and actual is "+test[index]);
-      test[index]=test[index]+100;
-  }
-  //else 
-  //    console.log("Element "+item+" is not divisible by 3");
+var bills = [50.23, 19.12, 34.01, 100.11, 12.15, 9.90, 29.11, 12.99, 10.00, 99.22, 102.20, 100.10, 6.77, 2.22];
+ 
+let totals = bills.map(function(bills){
+  bills*=1.15;
+  bills = bills.toFixed(2);
+  bills= Number(bills);
+  return bills 
 });
-console.log(test);
+
+
+
+
+console.log(totals);

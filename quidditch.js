@@ -9,4 +9,3 @@ function hasEnoughPlayers(team){
   }
 };
 console.log(hasEnoughPlayers(team));
-console.log(team.length)
